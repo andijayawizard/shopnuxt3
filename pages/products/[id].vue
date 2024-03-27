@@ -4,8 +4,8 @@ import { useToast } from "vue-toastification";
 const route = useRoute();
 const toast = useToast();
 const { addToCart } = useCart();
-const id = route.query.id;
-// const id = route.params.id;
+// const id = route.query.id;
+const id = route.params.id;
 
 const { data } = await useFetch(`https://dummyjson.com/products/${id}`);
 // const { data } = await useFetch(`/api/getProduct`);

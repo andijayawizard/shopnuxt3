@@ -8,6 +8,7 @@ const handleLogin = async () => {
   isLoading.value = true;
   const { data, status, error } = await useFetch(
     "https://dummyjson.com/auth/login",
+    // `/api/login`,
     {
       method: "POST",
       headers: {
